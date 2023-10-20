@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const body = document.body;
         const lampsOn = document.querySelectorAll(".lamp:not(.off)").length;
 
-        if (lampsOn === 2) {
+        if (lampsOn === 4) {
             // Change background to white when both lamps are on
             body.style.background = "#f2e34d"; // White background
         }
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Change background to white when both lamps are on
             body.style.background = "#000"; // black background
         }
-        if (lampsOn === 1) {
+        if (lampsOn === 2) {
             // Change background to half black and half yellow when one lamp is on and one lamp is off
             body.style.background = "linear-gradient(90deg, #000 50%, #f2e34d 50%)";
         }

@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.lamp {
+    position: relative;
+    width: 100px;
+    height: 200px;
+}
+
+.base {
+    width: 60px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.shade {
+    width: 80px;
+    height: 140px;
+    background-color: #f2e34d;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.lamp.off .shade {
+    background-color: #ccc; /* Grayed out when off */
+}

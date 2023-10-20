@@ -14,16 +14,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (lampsOn === 4) {
             // Change background to white when both lamps are on
-            body.style.background = "#f2e34d"; // White background
+            body.style.background = "#f2e34d"; // yellow background
         }
-        else
-        {
+        if (lampsOn === 3) {
             // Change background to white when both lamps are on
-            body.style.background = "#000"; // black background
+            body.style.background = "#fff"; // White background
         }
         if (lampsOn === 2) {
             // Change background to half black and half yellow when one lamp is on and one lamp is off
             body.style.background = "linear-gradient(90deg, #000 50%, #f2e34d 50%)";
+        }
+        if (lampsOn === 0) {
+            // Change background to white when both lamps are on
+            body.style.background = "#000"; // black background
         }
     }
 });
